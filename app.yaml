@@ -1,0 +1,17 @@
+runtime: custom
+env: flex
+
+service: fastapi-ml-app
+
+entrypoint: gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app
+
+resources:
+  cpu: 1
+  memory_gb: 2
+  disk_size_gb: 10
+
+env_variables:
+  PORT: 8080
+
+manual_scaling:
+  instances: 1
