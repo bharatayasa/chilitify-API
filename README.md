@@ -1,5 +1,5 @@
 # chilitify-API
-# FastAPI Image Prediction API
+## Image Prediction API
 
 This repository contains a FastAPI application that provides an endpoint for image classification using a pre-trained TensorFlow model. The application uses the Keras library for model handling and image preprocessing.
 
