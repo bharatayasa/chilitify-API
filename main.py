@@ -47,6 +47,6 @@ async def predict_image_endpoint(file: UploadFile = File(...)):
         return {"error": str(e)}
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8080))
-    print(f"Listening to http://0.0.0.0:{port}")
-    uvicorn.run(app, host="0.0.0.0", port=port)
+    # port = int(os.environ.get("PORT", 8080))
+    print(f"Listening to http://0.0.0.0:{8080}")
+    uvicorn.run(app, host="0.0.0.0", port=8080)
